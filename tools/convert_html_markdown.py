@@ -35,7 +35,7 @@ def create_subfolders_from_lines(text, complete_dict):
     start_index = find_line_number("AU Static", lines)
     page_title = lines[start_index-1][26:]
     title_path = page_title.replace(" ", "-")
-    current_folder = r"C:\Users\HW5584\Git\au_static_test_software\docs\AUSTS\markdowns"
+    current_folder = r""
     subfolder_hierarchy = []  # Keep track of the subfolder hierarchy
     hierarchy = 0
 
@@ -67,9 +67,9 @@ def create_subfolders_from_lines(text, complete_dict):
 
 if __name__ == "__main__":
     # Get all HTML files in the folder
-    html_files = [f for f in os.listdir("docs\AUSTS\html") if f.endswith('.html')]
-    folder_path = r"C:\Users\HW5584\Git\au_static_test_software\docs\AUSTS\html"
-    folder_path_mkdows = r"C:\Users\HW5584\Git\au_static_test_software\docs\AUSTS\markdowns"
+    html_files = [f for f in os.listdir("") if f.endswith('.html')]
+    folder_path = r""
+    folder_path_mkdows = r""
     # os.mkdir(fr"{folder_path}\markdowns")
     complete_dict = {}
 
